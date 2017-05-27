@@ -46,23 +46,10 @@ public class ArrayProcessing {
 		public static String print(int[] array){
 			
 			String result = "";
-			int changer = 0;
 			
-			for(int i = 0; i < (array.length + 1) / 2; i++){
+			for(int i = 0; i < (array.length); i++){
 				
-				changer = array[i];
-				
-				for(int j = array.length + 1; j < (array.length + 1) / 2; j--){
-					
-					array[i] = array[j];
-					array[j] = changer;
-					
-				}
-				
-			}
-			for(int i = 0; i < array.length; i++){
-				
-				result = String.valueOf(array[i]) + result ;
+				result = result + String.valueOf(array[i]);
 				
 			}
 			
